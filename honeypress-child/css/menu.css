@@ -1,0 +1,10 @@
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:focus {
+  background-image: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background: url("http://localhost/wordpress/wp-content/uploads/2020/09/menu.png") no-repeat scroll 0 0 transparent !important;
+  height: 42px;
+  width:47px;
+}

@@ -1,0 +1,53 @@
+.insight-post {
+  padding-bottom: 141px;
+}
+
+.insight-post-breadcrumb,
+.insight-post .bottom {
+  padding-left: 14%;
+}
+
+.insight-post-breadcrumb .col-sm-3 {
+  display: flex;
+}
+
+.insight-post-breadcrumb .col-sm-3 img {
+  height: 30px;
+}
+
+.insight-post-breadcrumb .col-sm-3 h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #011a27;
+  margin-top:5px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.insight-post-breadcrumb .col-sm-9 {
+  text-align: right;
+  padding-right: 8%;
+}
+
+.insight-post-content {
+  padding-top: 43px;
+}
+
+.insight-post-content figure {
+  display: none !important;
+}
+
+.blog .standard-view .post .entry-title a {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.29em;
+  color: #011a27;
+}
+
+.blog .standard-view .post .entry-title a span {
+  color: #ffaa00;
+}
+
+.blog .standard-view.blog-single .entry-content {
+  border-bottom: none;
+}

@@ -1,0 +1,9 @@
+.footer-sidebar .widget-contact {
+  color: #ffaa00 !important;
+  line-height: 1.23em;
+  text-align: center;
+}
+
+.footer-sidebar .widget-contact button {
+  margin-top: 40px;
+}
