@@ -9,7 +9,7 @@
    <div class="row insight-post-breadcrumb">
      <div class="col-sm-3">
        <img src="http://localhost/wordpress/wp-content/uploads/2020/09/Sottrazione-35.png" />
-       <a href="<?php echo get_permalink( get_page_by_path( 'insights' ) ) ?>"><h6>Torna a Insights</h6></a>
+       <a href="<?php echo get_permalink( get_page_by_path( 'intuizioni' ) ) ?>"><h6>Torna a Insights</h6></a>
      </div>
      <div class="col-sm-9">
        <img src="http://localhost/wordpress/wp-content/uploads/2020/09/Raggruppa-231.png" />

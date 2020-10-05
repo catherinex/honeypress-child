@@ -8,10 +8,6 @@
   padding-right: 14%;
 }
 
-/*.insights-post-list .post:hover {
-  background-color: #ffaa00;
-}*/
-
 .insights-post-list .post .post-content .post-title a {
   font-size: 45px;
   font-weight:bold;

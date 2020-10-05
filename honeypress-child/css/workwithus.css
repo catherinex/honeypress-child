@@ -1,0 +1,34 @@
+.ui.module-accordion {
+  border-bottom: solid 3px #011a27;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.ui-icon-triangle-1-s,
+.ui-icon-triangle-1-e {
+  display: none!important;
+}
+
+.accordion-title img {
+  width: 49px !important;
+  height: 31px !important;
+}
+
+.accordion-title {
+  display: flex !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.ui.module-accordion .accordion-title a {
+  padding: 0px;
+}
+
+.tb_default_color.module-accordion .accordion-title.ui-state-default:hover {
+  background-color: #ffaa00 !important;
+}
+
+.tb_default_color.module-accordion .accordion-title,
+.tb_default_color.module-accordion .accordion-title.ui-state-default.ui-state-active:hover {
+  background-color: #ffffff !important;
+}

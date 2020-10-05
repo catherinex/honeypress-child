@@ -1,0 +1,48 @@
+#home-arrow {
+  position: relative;
+  left: -371px;
+}
+
+.home-banner {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.home-banner .text {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.29;
+  color: #ffaa00;
+  margin-left: 551px;
+  margin-top: 59px;
+}
+
+.home-banner .action {
+  text-align: center;
+  margin-top: 111px;
+}
+
+.home-banner .text .text1,
+.home-banner .text .text2,
+.home-banner .text .text3 {
+  display: none;
+}
+
+.home-arrow-down {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.home-arrow-down h1 {
+  font-size: 98px;
+  color: #ffaa00;
+  line-height: 0.92;
+  margin-top: 68px;
+}
+
+.home-arrow-down h3 {
+  color: #ffffff;
+  line-height: 0.89;
+  margin-bottom: 218px;
+}

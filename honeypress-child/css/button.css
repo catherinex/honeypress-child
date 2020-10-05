@@ -1,7 +1,8 @@
 /*----- START button -----*/
-.mp-btn {
+.mp-btn,
+input[type="button"] {
   border-radius: 16px;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2) !important;
   background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
 }
 
@@ -11,5 +12,9 @@
 
 button:hover, button:focus {
   background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+}
+
+button {
+  padding: 0px !important;
 }
 /*----- END button -----*/
