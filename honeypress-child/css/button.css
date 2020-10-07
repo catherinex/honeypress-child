@@ -3,11 +3,20 @@ input[type="button"] {
   border-radius: 16px;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2) !important;
   background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+  display: inline-block;
+  font-weight: bold !important;
+  color: #011a27 !important;
+}
+
+.mp-btn:hover,
+.entry-content a:hover: {
+  color: #011a27 !important;
 }
 
 .mp-btn-small {
   height: 62.3px;
   width: 194px;
+  line-height: 62.3px;
 }
 
 .mp-btn-big {
@@ -25,5 +34,5 @@ button {
 .mp-btn-reverse:active {
   background-image: none;
   border: solid 2px #ffffff;
-  color: #ffffff;
+  color: #ffffff !important;
 }

@@ -26,9 +26,11 @@
       if (document.getElementById("home-arrow") !== null) {
         $('.text1').fadeIn( 3000, function() {
           var elem = document.getElementById("home-arrow");
-          var pos = -371;
-          var id = setInterval(frame, 1);
-          function frame() {
+
+          if ($( window ).width() >= 1200) {
+            var pos = -371;
+            var id = setInterval(frame, 1);
+            function frame() {
             if (pos == 269) {
               $('.text1').fadeOut( function() {
                 $('.text2').fadeIn( 3000 );
@@ -46,6 +48,28 @@
                 elem.style.left = pos + "px";
               }
             }
+          } else {
+            var pos = -605;
+            var id = setInterval(frame, 1);
+            function frame() {
+              if (pos == -275) {
+                $('.text1').fadeOut( function() {
+                  $('.text2').fadeIn( 3000 );
+                })
+              }
+              if (pos == 54) {
+                $('.text2').fadeOut( function() {
+                  $('.text3').fadeIn( 3000 );
+                });
+              }
+              if (pos == 384) {
+                clearInterval(id);
+              } else {
+                pos++;
+                elem.style.left = pos + "px";
+              }
+            }
+          }
         })
 
       }

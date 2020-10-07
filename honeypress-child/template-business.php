@@ -11,9 +11,9 @@
 <div>
 	<div class="home-banner">
 		<div class="text">
-			<h1 class="text1 bold">Le notizie<br><br>&nbsp;&nbsp;vengono prima di tutto.</h1>
-			<h1 class="text2 bold">Lavoriamo con<br><br>&nbsp;&nbsp;pagamenti a performance.</h1>
-			<h1 class="text3 bold">Il nostro focus<br><br>&nbsp;&nbsp;è l'innovazione.</h1>
+			<h1 class="text1 bold">Le notizie<br><br>&nbsp;&nbsp;&nbsp;&nbsp;vengono prima di tutto.</h1>
+			<h1 class="text2 bold">Lavoriamo con<br><br>&nbsp;&nbsp;&nbsp;&nbsp;pagamenti a performance.</h1>
+			<h1 class="text3 bold">Il nostro focus<br><br>&nbsp;&nbsp;&nbsp;&nbsp;è l'innovazione.</h1>
 	  </div>
 		<div class="action">
 			<button class="mp-btn mp-btn-small mp-btn-reverse" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'servizi' ) ) ?>'"><h6 class="bold">Scopri di più</h6></button>

@@ -11,9 +11,9 @@
 <div>
 	<div class="home-banner">
 		<div class="text">
-			<h1 class="text1 bold">News<br><br>&nbsp;&nbsp;come first.</h1>
-			<h1 class="text2 bold">We get paid<br><br>&nbsp;&nbsp;based on results.</h1>
-			<h1 class="text3 bold">Our focus is<br><br>&nbsp;&nbsp;on innovation.</h1>
+			<h1 class="text1 bold">News<br><br>&nbsp;&nbsp;&nbsp;&nbsp;come first.</h1>
+			<h1 class="text2 bold">We get paid<br><br>&nbsp;&nbsp;&nbsp;&nbsp;based on results.</h1>
+			<h1 class="text3 bold">Our focus is<br><br>&nbsp;&nbsp;&nbsp;&nbsp;on innovation.</h1>
 	  </div>
 		<div class="action">
 			<button class="mp-btn mp-btn-small" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'servizi' ) ) ?>'"><h6 class="bold">Find more</h6></button>
@@ -40,7 +40,7 @@
 <section class="section-know-more">
 	 	<div class="rec">
 			<h3 class="bold">You want to talk to us?</h3>
-			<button class="mp-btn-big" style="width:auto;" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contatti' ) ) ?>'"><h4>Contact us</h4></button>
+			<button class="mp-btn-big" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contacts' ) ) ?>'"><h4>Contact us</h4></button>
 		</div>
 </section>
 

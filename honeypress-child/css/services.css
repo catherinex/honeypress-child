@@ -50,8 +50,9 @@
   margin-right: 195px;
 }
 
-.slick-list {
-  margin-left: 115px;
+.single-item {
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .slick-prev {
