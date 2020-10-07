@@ -1,4 +1,3 @@
-/*----- START button -----*/
 .mp-btn,
 input[type="button"] {
   border-radius: 16px;
@@ -8,6 +7,11 @@ input[type="button"] {
 
 .mp-btn-small {
   height: 62.3px;
+  width: 194px;
+}
+
+.mp-btn-big {
+  width: 260px;
 }
 
 button:hover, button:focus {
@@ -17,4 +21,9 @@ button:hover, button:focus {
 button {
   padding: 0px !important;
 }
-/*----- END button -----*/
+
+.mp-btn-reverse:active {
+  background-image: none;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}

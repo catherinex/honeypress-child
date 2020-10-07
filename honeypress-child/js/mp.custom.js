@@ -55,7 +55,7 @@
             //$( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/Gruppo-di-maschere-86.png');
         });
 
-        $( ".tab-solutions .section-service .col-lg-4" ).hover(
+        $( ".section-service .col-lg-4" ).hover(
           function() {
             var imgUrl = $( this ).find('img').attr('src');
             var newUrl = imgUrl.substr(0, imgUrl.length-5)+"2.png";

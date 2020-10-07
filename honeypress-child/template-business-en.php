@@ -30,65 +30,17 @@
 
 <section class="section-service container">
 	<div class="row">
-   <div class="col-sm-4">
-		 <div class="table zoom" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-			 <div class="title"><h2><span>SPAIN</span><br>2000&nbsp;&nbsp;‎€</h2></div>
-			 <div class="content">
-				 <div class="icon"><img src="http://localhost/wordpress/wp-content/uploads/2020/09/Sottrazione-15.png" /></div>
-         <div><h5>5 guaranteed media outlets<span hidden>one media outlets out of the major in the country</span></h5><hr></div>
-				 <div><h5>Dedicated meeting</h5><hr></div>
-				 <div><h5>Creation of effective news</h5><hr></div>
-				 <div><h5>Writing the press release</h5><hr></div>
-				 <div><h5>Contacting the journalists</h5><hr></div>
-				 <div><h5>Collection of publications</h5><hr></div>
-				 <div><h5>Reporting</h5><hr></div>
-				 <div class="extra"><h5>Extra<span hidden><h2>1000&nbsp;‎€</h2></span></h5><hr></div>
-				 <div><h5>A second big guaranteed media outlet<span hidden>one media outlets out of the major in the country</span></h5></div>
-				 <div><button type="button" class="mp-btn mp-btn-small"><h6 class="bold">Find more</h6></button></div>
-			</div>
-		</div>
-	 </div>
-   <div class="col-sm-4"><div class="table zoom" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-		 <div class="title"><h2><span>ITALY</span><br>2000&nbsp;&nbsp;‎€</h2></div>
-		 <div class="content">
-			 <div class="icon"><img src="http://localhost/wordpress/wp-content/uploads/2020/09/Sottrazione-15.png" /></div>
-			 <div><h5>5 guaranteed media outlets<span hidden>one between Milano Finanza, Ilsole24ore, Corriere or Repubblica</span></h5><hr></div>
-			 <div><h5>Dedicated meeting</h5><hr></div>
-			 <div><h5>Creation of effective news</h5><hr></div>
-			 <div><h5>Writing the press release</h5><hr></div>
-			 <div><h5>Contacting the journalists</h5><hr></div>
-			 <div><h5>Collection of publications</h5><hr></div>
-			 <div><h5>Reporting</h5><hr></div>
-			 <div class="extra"><h5>Extra<span hidden><h2>1000&nbsp;‎€</h2></span></h5><hr></div>
-			 <div><h5>A second big guaranteed media outlet<span hidden>one between Milano Finanza, Ilsole24ore, Corriere, Wired, Start up Italia, Libero, il giornale, la verità</span></h5></div>
-			 <div><button type="button" class="mp-btn mp-btn-small"><h6 class="bold">Find more</h6></button></div>
-		</div>
-	</div></div>
-   <div class="col-sm-4"><div class="table zoom" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-		 <div class="title"><h2><span>UK</span><br>3500&nbsp;&nbsp;‎€</h2></div>
-		 <div class="content">
-			 <div class="icon"><img src="http://localhost/wordpress/wp-content/uploads/2020/09/Sottrazione-15.png" /></div>
-			 <div><h5>5 guaranteed media outlets<span hidden>one media outlets out of the major in the country</span></h5><hr></div>
-			 <div><h5>Dedicated meeting</h5><hr></div>
-			 <div><h5>Creation of effective news</h5><hr></div>
-			 <div><h5>Writing the press release</h5><hr></div>
-			 <div><h5>Contacting the journalists</h5><hr></div>
-			 <div><h5>Collection of publications</h5><hr></div>
-			 <div><h5>Reporting</h5><hr></div>
-			 <div class="extra"><h5>Extra<span hidden><h2>1500&nbsp;‎€</h2></span></h5><hr></div>
-			 <div><h5>A second big guaranteed media outlet<span hidden>one media outlets out of the major in the country</span></h5></div>
-			 <div><button type="button" class="mp-btn mp-btn-small"><h6 class="bold">Find more</h6></button></div>
-		</div>
+		<div class="col-lg-4"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_SPAIN_1.png" /></a></div>
+		<div class="col-lg-4"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_ITALY_1.png" /></a></div>
+		<div class="col-lg-4"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_GB_1.png" /></a></div>
 	</div>
-	</div>
-  </div>
 </section>
 
 
 <section class="section-know-more">
 	 	<div class="rec">
 			<h3 class="bold">You want to talk to us?</h3>
-			<button style="width:auto;" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contatti' ) ) ?>'"><h4>Contact us</h4></button>
+			<button class="mp-btn-big" style="width:auto;" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contatti' ) ) ?>'"><h4>Contact us</h4></button>
 		</div>
 </section>
 
