@@ -6,6 +6,7 @@ input[type="button"] {
   display: inline-block;
   font-weight: bold !important;
   color: #011a27 !important;
+  text-align: center;
 }
 
 .mp-btn:hover,
@@ -19,6 +20,12 @@ input[type="button"] {
   line-height: 62.3px;
 }
 
+.mp-btn-small-en {
+  height: 62.3px;
+  width: 234px;
+  line-height: 62.3px;
+}
+
 .mp-btn-big {
   width: 260px;
 }
@@ -29,6 +36,19 @@ button:hover, button:focus {
 
 button {
   padding: 0px !important;
+}
+
+button h6 {
+  margin-bottom: 0px;
+}
+
+a.mp-btn h6 {
+  line-height: 62.3px;
+}
+
+.mp-btn:active {
+  background-image: none;
+  border: solid 2px #011a27;
 }
 
 .mp-btn-reverse:active {

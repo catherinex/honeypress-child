@@ -32,3 +32,7 @@
 .tb_default_color.module-accordion .accordion-title.ui-state-default.ui-state-active:hover {
   background-color: #ffffff !important;
 }
+
+.accordion-content a {
+  margin-top: 32px;
+}

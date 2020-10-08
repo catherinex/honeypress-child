@@ -21,7 +21,7 @@ function my_plugin_add_stylesheet() {
     wp_enqueue_style( 'mp-style-insightpost', get_stylesheet_directory_uri() . '/css/insightpost.css');
     wp_enqueue_style( 'mp-style-insights', get_stylesheet_directory_uri() . '/css/insights.css');
     wp_enqueue_style( 'mp-style-services', get_stylesheet_directory_uri() . '/css/services.css', array(), rand(111,9999));
-    wp_enqueue_style( 'mp-style-workwithus', get_stylesheet_directory_uri() . '/css/workwithus.css');
+    wp_enqueue_style( 'mp-style-workwithus', get_stylesheet_directory_uri() . '/css/workwithus.css', array(), rand(111,9999));
     // slick
     wp_enqueue_style( 'slick', get_stylesheet_directory_uri() . '/js/slick/slick.css');
     wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() . '/js/slick/slick-theme.css');
