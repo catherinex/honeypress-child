@@ -8,12 +8,19 @@
 <div class="row footer-sidebar">
 	<?php
 	  if ((is_front_page() && 'page' == get_option( 'show_on_front' )) || (is_page('servizi'))) {
-		for($i=1; $i<=2; $i++)
+		for($i=1; $i<=1; $i++)
+		{
+			echo '<div class="col-lg-4 col-md-12 col-sm-12">';
+			dynamic_sidebar('footer-sidebar-'.$i);
+			echo '</div>';
+		}
+		for($i=2; $i<=2; $i++)
 		{
 			echo '<div class="col-lg-4 col-md-6 col-sm-12">';
 			dynamic_sidebar('footer-sidebar-'.$i);
 			echo '</div>';
-		}?>
+		}
+		?>
 		<div class="col-lg-4 col-md-6 col-sm-12">
 
 		      <aside id="nav_menu-3" class="widget widget_text sml-device widget_news">

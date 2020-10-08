@@ -14,7 +14,7 @@ add_action( 'wp_enqueue_scripts', 'my_plugin_add_stylesheet' );
 function my_plugin_add_stylesheet() {
     wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/style.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-homepage', get_stylesheet_directory_uri() . '/css/homepage.css', array(), rand(111,9999));
-    wp_enqueue_style( 'mp-style-footer', get_stylesheet_directory_uri() . '/css/footer.css');
+    wp_enqueue_style( 'mp-style-footer', get_stylesheet_directory_uri() . '/css/footer.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-button', get_stylesheet_directory_uri() . '/css/button.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-contactus', get_stylesheet_directory_uri() . '/css/contactus.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-menu', get_stylesheet_directory_uri() . '/css/menu.css', array(), rand(111,9999));

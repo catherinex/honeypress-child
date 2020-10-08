@@ -9,14 +9,6 @@
   font-weight: 500;
 }
 
-/*@media (min-width:768px) {
-  .navbar .nav .nav-item .nav-link {
-    color: rgb(6, 16, 24) !important;
-    height: 48px;
-    padding-left: 21px !important;
-  }
-}*/
-
 @media (max-width:991px) {
   .navbar .nav .nav-item .nav-link {
     border-top: solid 1px #011a27 !important;
@@ -78,7 +70,7 @@
     position: absolute;
     z-index: 1000;
     width: 436px;
-    top: 200px;
+    top: 120px;
     left: 192px;
     border: solid 1px #011a27;
   }
@@ -88,5 +80,11 @@
   .navbar .nav {
     margin-top: 0px !important;
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-light .navbar-toggler-icon {
+    transform: scale(0.7);
   }
 }

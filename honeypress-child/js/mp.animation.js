@@ -2,6 +2,10 @@
 
     $( document ).ready(function() {
 
+      if ($( window ).width() <= 576) {
+        $('#home-arrow').attr('src', '/wordpress/wp-content/themes/honeypress-child/images/sottrazione-165-mobile.png')
+      }
+
       if (document.getElementById("bigArrow-row") !== null) {
         var elem = document.getElementById("bigArrow");
           var pos = -1920;
@@ -48,7 +52,7 @@
                 elem.style.left = pos + "px";
               }
             }
-          } else {
+          } else if ($( window ).width() > 576) {
             var pos = -605;
             var id = setInterval(frame, 1);
             function frame() {
@@ -63,6 +67,27 @@
                 });
               }
               if (pos == 384) {
+                clearInterval(id);
+              } else {
+                pos++;
+                elem.style.left = pos + "px";
+              }
+            }
+          } else {
+            var pos = -204;
+            var id = setInterval(frame, 1);
+            function frame() {
+              if (pos == -41) {
+                $('.text1').fadeOut( function() {
+                  $('.text2').fadeIn( 3000 );
+                })
+              }
+              if (pos == 121) {
+                $('.text2').fadeOut( function() {
+                  $('.text3').fadeIn( 3000 );
+                });
+              }
+              if (pos == 283) {
                 clearInterval(id);
               } else {
                 pos++;

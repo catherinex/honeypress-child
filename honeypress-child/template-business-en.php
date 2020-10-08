@@ -16,7 +16,7 @@
 			<h1 class="text3 bold">Our focus is<br><br>&nbsp;&nbsp;&nbsp;&nbsp;on innovation.</h1>
 	  </div>
 		<div class="action">
-			<button class="mp-btn mp-btn-small" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'servizi' ) ) ?>'"><h6 class="bold">Find more</h6></button>
+			<a class="mp-btn mp-btn-small" type="button" href="<?php echo get_permalink( get_page_by_path( 'servizi' ) ) ?>"><h6 class="bold">Find more</h6></a>
 		</div>
 	</div>
 	<img id="home-arrow" src="/wordpress/wp-content/themes/honeypress-child/images/sottrazione-165.png" />

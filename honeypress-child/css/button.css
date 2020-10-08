@@ -28,6 +28,7 @@ input[type="button"] {
 
 .mp-btn-big {
   width: 260px;
+  height: 82px;
 }
 
 button:hover, button:focus {
@@ -53,6 +54,14 @@ a.mp-btn h6 {
 
 .mp-btn-reverse:active {
   background-image: none;
+  background-color: transparent;
   border: solid 2px #ffffff;
   color: #ffffff !important;
+}
+
+@media (max-width:991px) {
+  .mp-btn-big {
+    width: 219px;
+    height: 69.7px;
+  }
 }

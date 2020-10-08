@@ -3,6 +3,7 @@
     $( document ).ready(function() {
 
 
+
       $( ".insights-post-list .post" ).hover(
         function() {
           $( this ).css('background-color', '#ffaa00');
@@ -32,7 +33,7 @@
       if ( document.documentElement.lang.toLowerCase() === "en-gb" ) {
         $('.accordion-content').append('<a href="#" class="mp-btn mp-btn-small-en" type="button" onclick=""><h6 class="bold">Send your resume</h6></a>');
       } else {
-        $('.accordion-content').append('<button class="mp-btn mp-btn-small" type="button" onclick=""><h6 class="bold">Invia il tuo CV</h6></button>');
+        $('.accordion-content').append('<a href="#" class="mp-btn mp-btn-small" type="button" onclick=""><h6 class="bold">Invia il tuo CV</h6></a>');
       }
 
 

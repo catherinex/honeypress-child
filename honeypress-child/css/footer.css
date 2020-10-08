@@ -7,3 +7,21 @@
 .footer-sidebar .widget-contact button {
   margin-top: 40px;
 }
+
+.widget_nav_menu li::before {
+  position: absolute;
+}
+
+@media (max-width:991px) {
+  .footer-sidebar .col-md-12 {
+    text-align: center;
+  }
+
+  .footer-sidebar .col-lg-4:nth-child(2) {
+    padding-left: 9%;
+  }
+
+  .footer-sidebar .col-lg-4:nth-child(3) {
+    padding-left: 24%;
+  }
+}
