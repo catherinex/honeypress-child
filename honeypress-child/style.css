@@ -73,24 +73,6 @@ hr {
   border: solid 1px #011a27;
 }
 
-/* ---------- menu -------- */
-.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.navbar .nav .nav-item .nav-link {
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff !important;
-  height: 40px;
-}
-
-.navbar .nav .nav-item.active .nav-link {
-  font-weight: bold;
-  color: #ffaa00 !important;
-  border-bottom: solid 1px #ffaa00;
-}
 
 /* ----- footer ----- */
 
@@ -153,10 +135,6 @@ hr {
 
 .home #wrapper {
   background-color: #011a27;
-}
-
-.section-service {
-  height: 1500px;
 }
 
 .section-service .row {

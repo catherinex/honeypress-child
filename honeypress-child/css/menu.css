@@ -1,3 +1,46 @@
+@charset "UTF-8";
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.navbar .nav .nav-item .nav-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*@media (min-width:768px) {
+  .navbar .nav .nav-item .nav-link {
+    color: rgb(6, 16, 24) !important;
+    height: 48px;
+    padding-left: 21px !important;
+  }
+}*/
+
+@media (max-width:991px) {
+  .navbar .nav .nav-item .nav-link {
+    border-top: solid 1px #011a27 !important;
+    color: rgb(6, 16, 24) !important;
+    height: 48px;
+    padding-left: 21px !important;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width:1200px) {
+  .navbar .nav .nav-item .nav-link {
+    color: #ffffff !important;
+    height: 40px;
+  }
+}
+
+
+.navbar .nav .nav-item.active .nav-link {
+  font-weight: bold;
+  color: #ffaa00 !important;
+  border-bottom: solid 1px #ffaa00;
+}
+
 .navbar-light .navbar-toggler:hover,
 .navbar-light .navbar-toggler:focus {
   background-image: none;
@@ -7,4 +50,43 @@
   background: url("http://localhost/wordpress/wp-content/uploads/2020/09/menu.png") no-repeat scroll 0 0 transparent !important;
   height: 42px;
   width:47px;
+}
+
+/* tablet and mobile menu */
+
+.ml-auto .title {
+  height: 48px;
+  background-color: #011a27;
+}
+
+.ml-auto .title .text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffaa00;
+}
+
+@media (min-width:991px) {
+  .ml-auto .title {
+    display: none;
+  }
+}
+
+@media (max-width:991px) {
+  .ml-auto {
+    position: absolute;
+    z-index: 1000;
+    width: 436px;
+    top: 200px;
+    left: 192px;
+    border: solid 1px #011a27;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .nav {
+    margin-top: 0px !important;
+    margin-left: 0px;
+  }
 }

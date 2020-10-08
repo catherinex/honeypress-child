@@ -20,6 +20,9 @@
 
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<div class="ml-auto">
+			<div class="title">
+				<div class="text"><strong>Menu</strong></div>
+			</div>
 		<?php
 		 $honeypress_shop_button = '<ul class="nav navbar-nav mr-auto">%3$s';
 		 if ( class_exists( 'WooCommerce' ) ) {
