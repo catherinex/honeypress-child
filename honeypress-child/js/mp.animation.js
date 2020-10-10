@@ -6,7 +6,7 @@
         $('#home-arrow').attr('src', '/wordpress/wp-content/themes/honeypress-child/images/sottrazione-165-mobile.png')
       }
 
-      if (document.getElementById("bigArrow-row") !== null) {
+      if (document.getElementById("bigArrow-row") !== null && $( window ).width() >= 991) {
         var elem = document.getElementById("bigArrow");
           var pos = -1920;
           var id = setInterval(frame, 1);

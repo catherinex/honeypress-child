@@ -83,3 +83,30 @@
   height: 158px;
   width: 327px;
 }
+
+@media (max-width:991px) {
+  #bigArrow-row, .arrow-row {
+    display: none;
+  }
+
+  .service-content-left {
+    width: 101px !important;
+  }
+
+  .service-content-right {
+    width: 72% !important;
+  }
+
+  .service-content-right .module-image.image-top .image-content {
+    text-align: left !important;
+    margin-top: 0px !important;
+  }
+
+  .service-content-right .tb-column-inner .module:nth-child(2) {
+    margin-top: 40px !important;
+  }
+
+  .service-content-right .module-image.image-top .image-content .image-title {
+    height: auto;
+  }
+}
