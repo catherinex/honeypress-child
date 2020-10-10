@@ -69,9 +69,9 @@
   .ml-auto {
     position: absolute;
     z-index: 1000;
-    width: 436px;
+    width: 55%;
     top: 120px;
-    left: 192px;
+    left: 20%;
     border: solid 1px #011a27;
   }
 }
@@ -84,7 +84,14 @@
 }
 
 @media (max-width: 576px) {
+
   .navbar-light .navbar-toggler-icon {
     transform: scale(0.7);
   }
+
+  .navbar .nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+
+
 }
