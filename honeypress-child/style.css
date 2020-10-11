@@ -218,19 +218,6 @@ hr {
   color: #011a27;
 }
 
-.table hr {
-  width: 250px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.section-know-more .rec {
-  background-color: #ffaa00;
-  height: 217px;
-  text-align: center;
-  padding: 30px;
-}
-
 .section-know-more .rec h2 {
   margin-bottom: 30px;
   font-weight: 600;

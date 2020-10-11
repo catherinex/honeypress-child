@@ -15,6 +15,65 @@
   line-height: 38px;
 }
 
+/* START how we work */
+.services-contactus .module-buttons .module-buttons-item a {
+    width: 194.8px;
+    height: 62px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+}
+
+@media (max-width:991px) {
+  .service-content-left {
+    width: 116px !important;
+  }
+
+  .service-content-right {
+    width: 72% !important;
+  }
+
+  .service-content-right .tb-column-inner .module:nth-child(2) {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width:576px) {
+  .service-content-left {
+    width: 62px !important;
+  }
+
+  .service-content-right {
+    width: 78% !important;
+  }
+
+  .service-content-right .tb-column-inner .module .image-wrap {
+    display: none;
+  }
+
+  .service-content-right .tb-column-inner .module:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .service-content-right .tb-column-inner .module:nth-child(2) {
+    margin-top: 36px !important;
+  }
+
+  .services-contactus .module-buttons .module-buttons-item a {
+      width: 109px;
+      height: 35px;
+      border-radius: 9px !important;
+      box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
+      background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+  }
+
+  .services-contactus .ui.builder_button {
+    line-height: 20px;
+  }
+}
+
+/* END how we work */
+
 /*------ tabs ----------*/
 
 .ui-widget.ui-widget-content,
@@ -58,18 +117,40 @@
   line-height: 0.69;
 }
 
+.text p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+@media (max-width:991px) {
+  .text p.title {
+    font-size: 110px;
+    margin-top: 44px;
+  }
+
+  .text p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width:576px) {
+  .text p.title {
+    font-size: 69px;
+    margin-bottom: 24px !important;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+}
+
 .tab1-text {
   padding-bottom: 170px;
 }
 
 .tab2-text p.title {
   color: #6d7c83 !important;
-}
-
-.text p {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 1.33;
 }
 
 .single-item {
@@ -104,12 +185,27 @@
 .slick-slide img {
   height: 158px;
   width: 327px;
+  object-fit: contain;
 }
 
 /* START tab 2 - business cases */
+.tab2-text {
+  padding-bottom: 120px;
+}
+
 .image-grid {
   padding-left: 7%;
   padding-right: 7%;
+}
+
+.grid-row {
+  margin-top: 24.5px;
+}
+
+.action {
+  text-align: center;
+  margin-top: 87px;
+  margin-bottom: 92px;
 }
 
 @media (max-width:991px) {
@@ -132,6 +228,34 @@
     font-size: 18px;
   }
 }
+
+@media (max-width:576px) {
+  .tab2-text {
+    padding-bottom: 6px;
+  }
+
+  .image-grid .row {
+    margin-right: 0px;
+  }
+
+  .image-grid img {
+    width: 128px;
+    height: 128px;
+  }
+
+  .grid-row {
+    margin-top: 7px;
+  }
+
+  .action {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .action h6 {
+    font-size: 14px;
+  }
+}
 /* END tab 2 - business cases */
 
 /* START tab 3 - solutions */
@@ -145,6 +269,17 @@
   .tab-solutions .section-service {
     margin-top: 169px;
     height: auto;
+  }
+}
+
+@media (max-width:576px) {
+  .tab-solutions .section-service {
+    margin-top: 46px;
+    margin-bottom: 116px;
+  }
+
+  .tab-solutions .section-service img {
+    width: 90%;
   }
 }
 /* END tab 3 - solutions */
@@ -177,21 +312,9 @@
     display: none;
   }
 
-  .service-content-left {
-    width: 116px !important;
-  }
-
-  .service-content-right {
-    width: 72% !important;
-  }
-
   .service-content-right .module-image.image-top .image-content {
     text-align: left !important;
     margin-top: 0px !important;
-  }
-
-  .service-content-right .tb-column-inner .module:nth-child(2) {
-    margin-top: 40px !important;
   }
 
   .service-content-right .module-image.image-top .image-content .image-title {
@@ -201,15 +324,6 @@
   .ui.module-tab.rounded .tab-nav li:nth-child(2) {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .text p.title {
-    font-size: 110px;
-    margin-top: 44px;
-  }
-
-  .text p {
-    font-size: 24px;
   }
 
   .tab-content .tb_text_wrap {

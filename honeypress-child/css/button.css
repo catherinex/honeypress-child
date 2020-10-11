@@ -70,4 +70,26 @@ a.mp-btn h6 {
     height: 50px;
     line-height: 50px;
   }
+
+  a.mp-btn h6 {
+    line-height: 50px;
+  }
+}
+
+@media (max-width:576px) {
+  .mp-btn-big {
+    width: 126.9px;
+    height: 40.4px;
+  }
+
+  .mp-btn-small {
+    width: 109px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 9px;
+  }
+
+  a.mp-btn h6 {
+    line-height: 35px;
+  }
 }
