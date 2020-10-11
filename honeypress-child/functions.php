@@ -19,7 +19,7 @@ function my_plugin_add_stylesheet() {
     wp_enqueue_style( 'mp-style-contactus', get_stylesheet_directory_uri() . '/css/contactus.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-menu', get_stylesheet_directory_uri() . '/css/menu.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-insightpost', get_stylesheet_directory_uri() . '/css/insightpost.css');
-    wp_enqueue_style( 'mp-style-insights', get_stylesheet_directory_uri() . '/css/insights.css');
+    wp_enqueue_style( 'mp-style-insights', get_stylesheet_directory_uri() . '/css/insights.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-services', get_stylesheet_directory_uri() . '/css/services.css', array(), rand(111,9999));
     wp_enqueue_style( 'mp-style-workwithus', get_stylesheet_directory_uri() . '/css/workwithus.css', array(), rand(111,9999));
     // slick

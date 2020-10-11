@@ -13,3 +13,19 @@
   font-weight:bold;
   line-height: 1.33em;
 }
+
+@media (max-width:991px) {
+  .insights-post-list .post .post-content .post-title a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width:576px) {
+  .builder-posts-wrap.list-thumb-image .post-image {
+    display: none;
+  }
+
+  .insights-post-list .post .post-content .post-title a {
+    font-size: 20px;
+  }
+}
