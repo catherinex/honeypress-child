@@ -36,3 +36,22 @@
 .accordion-content a {
   margin-top: 32px;
 }
+
+@media (max-width:991px) {
+  .ui-accordion .ui-accordion-heade {
+    padding-top: 30.3px !important;
+    padding-bottom: 30.3px !important;
+  }
+
+  .accordion-title img {
+    width: 32px !important;
+    height: 20px !important;
+  }
+}
+
+@media (max-width:576px) {
+  .accordion-title img {
+    width: 23px !important;
+    height: 14px !important;
+  }
+}

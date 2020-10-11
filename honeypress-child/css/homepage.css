@@ -17,9 +17,22 @@
 }
 
 @media (max-width:576px) {
+  .navbar-expand-lg > .container {
+    margin-top: 68.7px !important;
+    margin-bottom: 30.3px !important;
+  }
+
   .container .custom-logo-link-url a img {
     width: 50px;
     height: 54.25px;
+  }
+
+  .container .custom-logo-link-url {
+    margin-left: 41px !important;
+  }
+
+  .navbar-toggler {
+    margin-right: 41px !important;
   }
 }
 
@@ -81,6 +94,11 @@
     padding-left: 11%;
     padding-right: 11%;
     padding-top: 60px;
+  }
+
+  .home-banner .text {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .home-banner .text h1 {
