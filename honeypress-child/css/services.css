@@ -60,7 +60,7 @@
   }
 
   .services-contactus .module-buttons .module-buttons-item a {
-      width: 109px;
+      width: 111px;
       height: 35px;
       border-radius: 9px !important;
       box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
@@ -109,6 +109,11 @@
   margin-right: 195px;
 }
 
+.text {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
 .text p.title {
   font-size: 238px;
   color: #d9dddf;
@@ -119,7 +124,7 @@
 
 .text p {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bold !important;
   line-height: 1.33;
 }
 
@@ -135,9 +140,18 @@
 }
 
 @media (max-width:576px) {
+  .text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .text p.title {
     font-size: 69px;
+    line-height: 0.94em;
     margin-bottom: 24px !important;
+    color: #d9dddf !important;
+    margin-top: 0px;
+    padding-top: 44px;
   }
 
   .text p {
@@ -249,11 +263,13 @@
 
   .action {
     margin-top: 31px;
-    margin-bottom: 31px;
+    margin-bottom: 0px;
+    padding-bottom: 35.7px;
   }
 
   .action h6 {
     font-size: 14px;
+    margin-bottom: 0px;
   }
 }
 /* END tab 2 - business cases */
@@ -273,9 +289,14 @@
 }
 
 @media (max-width:576px) {
+  .tab-solutions .text .title {
+    margin-top: 0px;
+  }
+
   .tab-solutions .section-service {
     margin-top: 46px;
-    margin-bottom: 116px;
+    margin-bottom: 0px;
+    padding-bottom: 116px;
   }
 
   .tab-solutions .section-service img {
@@ -307,7 +328,7 @@
 
 @media (max-width:576px) {
   .module_column .module-buttons.rounded a {
-    width: 126.9px;
+    width: auto;
     height: 40.4px;
     border-radius: 9px;
   }
