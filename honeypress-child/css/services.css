@@ -106,6 +106,72 @@
   width: 327px;
 }
 
+/* START tab 2 - business cases */
+.image-grid {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+@media (max-width:991px) {
+  .image-grid img {
+    width: 233px;
+    height: 233px;
+  }
+
+  .image-grid {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .image-grid .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .action h6 {
+    font-size: 18px;
+  }
+}
+/* END tab 2 - business cases */
+
+/* START tab 3 - solutions */
+.tab-solutions .section-service {
+  margin-top: 280px;
+  margin-bottom: 307px;
+  height: 947px;
+}
+
+@media (max-width:991px) {
+  .tab-solutions .section-service {
+    margin-top: 169px;
+    height: auto;
+  }
+}
+/* END tab 3 - solutions */
+
+/* START know more */
+
+.module_column .module-buttons.rounded a {
+  width: 260px;
+  height: 82.8px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+}
+
+.ui.builder_button {
+  border: 0px;
+}
+
+@media (max-width:991px) {
+  .module_column .module-buttons.rounded a {
+    width: 219px;
+    height: 69.7px;
+  }
+}
+
+/* END know more */
+
 @media (max-width:991px) {
   #bigArrow-row, .arrow-row {
     display: none;
@@ -173,6 +239,5 @@
   .tab2-text p.title {
     line-height: 1em;
   }
-
 
 }
