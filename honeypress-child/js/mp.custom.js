@@ -15,9 +15,19 @@
           $( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/arrow2.png');
       });
 
-      $('.single-item').slick({
-          speed: 500
-      });
+      if ($( window ).width() > 991) {
+        $('.single-item').slick({
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 1
+        });
+      } else {
+        $('.single-item').slick({
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+      }
 
       $('.service-tabs .builder-tabs-wrap').tabs();
 

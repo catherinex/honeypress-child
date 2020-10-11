@@ -50,6 +50,28 @@
   margin-right: 195px;
 }
 
+.text p.title {
+  font-size: 238px;
+  color: #d9dddf;
+  margin-top: 145px;
+  margin-bottom: 60px !important;
+  line-height: 0.69;
+}
+
+.tab1-text {
+  padding-bottom: 170px;
+}
+
+.tab2-text p.title {
+  color: #6d7c83 !important;
+}
+
+.text p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
 .single-item {
   margin-left: 8%;
   margin-right: 8%;
@@ -90,7 +112,7 @@
   }
 
   .service-content-left {
-    width: 101px !important;
+    width: 116px !important;
   }
 
   .service-content-right {
@@ -109,4 +131,48 @@
   .service-content-right .module-image.image-top .image-content .image-title {
     height: auto;
   }
+
+  .ui.module-tab.rounded .tab-nav li:nth-child(2) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .text p.title {
+    font-size: 110px;
+    margin-top: 44px;
+  }
+
+  .text p {
+    font-size: 24px;
+  }
+
+  .tab-content .tb_text_wrap {
+    text-align: center;
+  }
+
+  /* tab 1 clients */
+  .tab1-text {
+    padding-bottom: 68px;
+  }
+
+  .single-item {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .slick-list {
+    margin-left: 28% !important;
+    margin-right: 28% !important;
+    z-index: 10;
+  }
+
+  .slick-prev, .slick-next {
+    z-index: 0;
+  }
+
+  .tab2-text p.title {
+    line-height: 1em;
+  }
+
+
 }
