@@ -83,10 +83,14 @@ a.mp-btn h6 {
   }
 
   .mp-btn-small {
-    width: 109px;
+    width: 109.2px;
     height: 35px;
     line-height: 35px;
     border-radius: 9px;
+  }
+
+  .mp-btn-small h6 {
+    font-size: 12px;
   }
 
   a.mp-btn h6 {

@@ -305,6 +305,18 @@
   }
 }
 
+@media (max-width:576px) {
+  .module_column .module-buttons.rounded a {
+    width: 126.9px;
+    height: 40.4px;
+    border-radius: 9px;
+  }
+
+  .module_column .module-buttons.rounded a span {
+    line-height: 30px;
+  }
+}
+
 /* END know more */
 
 @media (max-width:991px) {
