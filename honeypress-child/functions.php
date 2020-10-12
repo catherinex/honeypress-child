@@ -32,7 +32,7 @@ function my_plugin_add_stylesheet() {
 
     // mp js
     wp_enqueue_script( 'mp.animation', get_stylesheet_directory_uri() . '/js/mp.animation.js', array(), rand(111,9999));
-    wp_enqueue_script( 'mp.custom', get_stylesheet_directory_uri() . '/js/mp.custom.js');
+    wp_enqueue_script( 'mp.custom', get_stylesheet_directory_uri() . '/js/mp.custom.js', array(), rand(111,9999));
 
 }
 

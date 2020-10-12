@@ -31,6 +31,7 @@
 
       $('.service-tabs .builder-tabs-wrap').tabs();
 
+
       $( ".accordion-title" ).each(function() {
           if ($(this).find('a').attr('aria-expanded') === 'true') {
             $(this).append( "<img src='http://localhost/wordpress/wp-content/themes/honeypress-child/images/arrow_top.png' />" );
@@ -62,13 +63,32 @@
             var imgUrl = $( this ).find('img').attr('src');
             var newUrl = imgUrl.substr(0, imgUrl.length-4)+"A.png";
             $( this ).find('img').attr('src', newUrl);
-            //$( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/Gruppo-di-maschere-91.png');
           }, function() {
             var imgUrl = $( this ).find('img').attr('src');
             var newUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
             $( this ).find('img').attr('src', newUrl);
-            //$( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/Gruppo-di-maschere-86.png');
       });
+
+      $( ".image-grid .col-lg-4" ).click(
+        function() {
+          var imgUrl = $( this ).find('img').attr('src');
+          if ($( window ).width() > 991) {
+            imgUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
+          }
+          /*$( "#dialog" ).find('img').attr('src', imgUrl);
+          $( "#dialog" ).dialog( "open" );*/
+          var modal = document.getElementById("myModal");
+          var modalImg = document.getElementById("img01");
+          modal.style.display = "block";
+          modalImg.src = imgUrl;
+        }
+      )
+
+      $( ".modal .close" ).click(
+        function() {
+          $('#myModal').attr('style', 'display:none;');
+        }
+      )
 
       $( ".section-service .col-xl-4" ).hover(
           function() {
