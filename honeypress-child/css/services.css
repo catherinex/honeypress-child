@@ -440,11 +440,23 @@
 .closeimg {
   position: absolute;
   top: 60px;
-  right: 35px;
+  right: 31%;
   color: #f1f1f1 !important;
   font-size: 40px !important;
   font-weight: bold !important;
   transition: 0.3s;
+}
+
+@media (max-width:991px) {
+  .closeimg {
+    right: 4%;
+  }
+}
+
+@media (max-width:576px) {
+  .closeimg {
+    right: 0px;
+  }
 }
 
 .close:hover,
