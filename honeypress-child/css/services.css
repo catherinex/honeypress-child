@@ -173,7 +173,7 @@
 }
 
 .slick-prev {
-  background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-702.png") no-repeat scroll 0 0 transparent !important;
+  background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-757sx.png") no-repeat scroll 0 0 transparent !important;
   height: 158px!important;
   width: 327px!important;
   left: 0px;
@@ -185,7 +185,7 @@
 }
 
 .slick-next {
-  background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-700.png") no-repeat scroll 0 0 transparent !important;
+  background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-757dx.png") no-repeat scroll 0 0 transparent !important;
   height: 158px!important;
   width: 327px!important;
   right: 0px;
@@ -200,6 +200,29 @@
   height: 158px;
   width: 327px;
   object-fit: contain;
+}
+
+@media (max-width:576px) {
+  .slick-prev {
+    background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-757s.png") no-repeat scroll 0 0 transparent !important;
+    height: 93px!important;
+    width: 123px!important;
+    left: 0px;
+    z-index: 10;
+    left: 11% !important;
+  }
+
+  .slick-next {
+    background: url("http://localhost/wordpress/wp-content/themes/honeypress-child/images/raggruppa-757d.png") no-repeat scroll 0 0 transparent !important;
+    height: 93px!important;
+    width: 123px!important;
+    right: 11% !important;
+    z-index: 0 !important;
+  }
+
+  .slick-slide img {
+    width: 182px;
+  }
 }
 
 /* START tab 2 - business cases */

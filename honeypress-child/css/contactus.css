@@ -1,4 +1,71 @@
 /* START contact form */
+/* custom checkbox styling for contact form 7 checkbox */
+span.wpcf7-list-item {
+display: inline-block;
+margin: 0;
+}
+
+.wpcf7 .wpcf7-list-item {
+  margin-bottom: 10px;
+  margin-right: 56px;
+}
+
+.wpcf7-checkbox label {
+position: relative;
+cursor: pointer;
+}
+.wpcf7-checkbox input[type=checkbox] {
+/*position: relative;*/
+position: absolute;
+visibility: hidden;
+width: 30px;
+height: 30px;
+top: 0;
+left: 0;
+}
+
+.wpcf7-checkbox input[type=checkbox] + span:before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 0;
+  height: 48px;
+  width: 48px;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
+  border: solid 2px #011a27;
+  background-color: #f5f5f5;
+}
+
+.wpcf7-checkbox input[type=checkbox] + span:after {
+  display: block;
+  position: absolute;
+  content: "\2713";
+  height: 48px;
+  width: 48px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 26px;
+  text-align: center;
+  line-height: 48px;
+}
+.wpcf7-checkbox input[type=checkbox]:checked + span:before {
+background: transparent;
+}
+.wpcf7-checkbox input[type=checkbox]:checked + span:after {
+visibility: visible;
+}
+
+.wpcf7-list-item-label {
+  margin-left: 60px;
+  display: inline-block;
+  line-height: 48px;
+  font-weight: 600;
+}
+
 .wpcf7 {
   padding-left: 14%;
   padding-right: 14%;
@@ -43,6 +110,7 @@
   color: #011a27;
   cursor: pointer;
   margin-left: 44.6px;
+  margin-top: 5px;
 }
 
 span.wpcf7-list-item {
