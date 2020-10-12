@@ -42,12 +42,12 @@
       })
 
       if ( document.documentElement.lang.toLowerCase() === "en-gb" ) {
-        $('.accordion-content').append('<a href="#" class="mp-btn mp-btn-small-en" type="button" onclick=""><h6 class="bold">Send your resume</h6></a>');
+        $('.accordion-content').append('<a href="mailto:demonxuxiang@gmail.com" class="mp-btn mp-btn-small-en" type="button"><h6 class="bold">Send your resume</h6></a>');
         $('#custom_html-6 h6.label').html("You want to talk to us?");
         $('#custom_html-6 button h6').html("Contact us");
         $('#custom_html-6 button').attr("onclick", "location.href='/wordpress/en/contacts/'");
       } else {
-        $('.accordion-content').append('<a href="#" class="mp-btn mp-btn-small" type="button" onclick=""><h6 class="bold">Invia il tuo CV</h6></a>');
+        $('.accordion-content').append('<a href="mailto:demonxuxiang@gmail.com" class="mp-btn mp-btn-small" type="button"><h6 class="bold">Invia il tuo CV</h6></a>');
       }
 
 
