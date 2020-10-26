@@ -12,6 +12,13 @@
  Text Domain:  twentyfifteenchild
 */
 
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #011a27;
 }
@@ -233,7 +240,7 @@ hr {
 
 /*----- START customized styles -----*/
 .bold {
-  font-weight: 600;
+  font-family: Montserrat-Bold;
 }
 
 .yellow-border {
@@ -251,3 +258,9 @@ hr {
   top: -2px;
 }
 /*----- END customized styles -----*/
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(http://localhost/wordpress/wp-content/themes/honeypress-child/fonts/Montserrat-Bold.ttf);
+  font-weight: normal;
+}

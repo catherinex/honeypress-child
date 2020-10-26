@@ -9,6 +9,11 @@
   font-weight: 500;
 }
 
+.navbar .nav .nav-item .nav-link {
+  color: #ffffff !important;
+  height: 40px;
+}
+
 @media (max-width:991px) {
   .navbar .nav .nav-item .nav-link {
     border-top: solid 1px #011a27 !important;
@@ -19,12 +24,12 @@
   }
 }
 
-@media (min-width:1200px) {
+/*@media (min-width:1200px) {
   .navbar .nav .nav-item .nav-link {
     color: #ffffff !important;
     height: 40px;
   }
-}
+}*/
 
 
 .navbar .nav .nav-item.active .nav-link {

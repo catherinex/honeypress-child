@@ -63,6 +63,7 @@
             var imgUrl = $( this ).find('img').attr('src');
             var newUrl = imgUrl.substr(0, imgUrl.length-4)+"A.png";
             $( this ).find('img').attr('src', newUrl);
+            $( this ).find('img').data('oUrl', imgUrl);
           }, function() {
             var imgUrl = $( this ).find('img').attr('src');
             var newUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
@@ -71,12 +72,7 @@
 
       $( ".image-grid .col-lg-4" ).click(
         function() {
-          var imgUrl = $( this ).find('img').attr('src');
-          if ($( window ).width() > 991) {
-            imgUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
-          }
-          /*$( "#dialog" ).find('img').attr('src', imgUrl);
-          $( "#dialog" ).dialog( "open" );*/
+          var imgUrl = $( this ).data('url');
           var modal = document.getElementById("myModal");
           var modalImg = document.getElementById("img01");
           modal.style.display = "block";

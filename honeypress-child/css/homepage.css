@@ -61,14 +61,24 @@
   display: none;
 }
 
-@media (min-width:768px) {
+.home-banner .text {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: #ffaa00;
+  margin-top: 59px;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+@media (max-width:1200px) {
   .home-banner .text {
     font-size: 42px !important;
-    font-weight: bold;
     line-height: 2.14;
     color: #ffaa00;
-    margin-left: 14%;
     margin-top: 163px;
+    padding-left: 9%;
+    padding-right: 9%;
   }
 
   .home-banner .text h1 {
@@ -78,27 +88,16 @@
   }
 }
 
-@media (min-width:1200px) {
-  .home-banner .text {
-    font-size: 70px;
-    font-weight: bold;
-    line-height: 1.29;
-    color: #ffaa00;
-    margin-left: 28%;
-    margin-top: 59px;
-  }
-}
-
 @media (max-width: 576px) {
   .home-banner {
-    padding-left: 11%;
-    padding-right: 11%;
-    padding-top: 60px;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
   .home-banner .text {
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 60px;
   }
 
   .home-banner .text h1 {
@@ -189,6 +188,12 @@
 /* START section services */
 .section-service {
   height: 1500px;
+}
+
+@media (max-width:1200px) {
+  .section-service {
+    height: auto;
+  }
 }
 
 @media (max-width:991px) {

@@ -47,6 +47,14 @@ a.mp-btn h6 {
   line-height: 62.3px;
 }
 
+a.shortcode.button {
+  background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8) !important;
+  line-height: 62.3px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 16px !important;
+}
+
 .mp-btn:active {
   background-image: none;
   border: solid 2px #011a27;
@@ -69,6 +77,10 @@ a.mp-btn h6 {
     width: 157.1px;
     height: 50px;
     line-height: 50px;
+  }
+
+  a.shortcode.button {
+    line-height: 50px !important;
   }
 
   .mp-btn-small-en {
@@ -97,6 +109,15 @@ a.mp-btn h6 {
     height: 35px;
     line-height: 35px;
     border-radius: 9px;
+  }
+
+  a.shortcode.button {
+    line-height: 35px !important;
+    border-radius: 9px !important;
+  }
+
+  a.shortcode.button {
+    line-height: 35px;
   }
 
   .mp-btn-small-en {
