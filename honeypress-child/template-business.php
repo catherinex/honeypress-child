@@ -11,9 +11,9 @@
 <div>
 	<div class="home-banner">
 		<div class="text">
-			<h1 class="text1 bold">Le notizie<br><br>&nbsp;&nbsp;&nbsp;&nbsp;vengono prima di tutto.</h1>
-			<h1 class="text2 bold">Lavoriamo con<br><br>&nbsp;&nbsp;&nbsp;&nbsp;pagamenti a performance.</h1>
-			<h1 class="text3 bold">Il nostro focus<br><br>&nbsp;&nbsp;&nbsp;&nbsp;è l'innovazione.</h1>
+			<div><h1 class="text1 bold">Le notizie<br><br>&nbsp;&nbsp;&nbsp;&nbsp;vengono prima di tutto.</h1></div>
+			<div><h1 class="text2 bold">Lavoriamo con<br><br>&nbsp;&nbsp;&nbsp;&nbsp;pagamenti a performance.</h1></div>
+			<div><h1 class="text3 bold">Il nostro focus<br><br>&nbsp;&nbsp;&nbsp;&nbsp;è l'innovazione.</h1></div>
 	  </div>
 		<div class="action">
 			<a class="mp-btn mp-btn-small mp-btn-reverse" type="button" href="<?php echo get_permalink( get_page_by_path( 'servizi' ) ) ?>"><h6 class="bold">Scopri di più</h6></a>
@@ -30,9 +30,13 @@
 
 <section class="section-service container">
 	<div class="row">
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/servizi/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_SPAGNA_1.png" /></a></div>
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/servizi/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_ITALIA_1.png" /></a></div>
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/servizi/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_UK_1.png" /></a></div>
+		<div class="col-xl-4 col-lg-6 col-md-12">
+			<img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_SPAGNA_1.png"/>
+		</div>
+		<div class="col-xl-4 col-lg-6 col-md-12"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_ITALIA_1.png"/>
+		</div>
+		<div class="col-xl-4 col-lg-6 col-md-12"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_UK_1.png"/>
+		</div>
 	</div>
 </section>
 
@@ -40,7 +44,7 @@
 <section class="section-know-more">
 	 	<div class="rec">
 			<h3 class="bold">Vuoi saperne di più?</h3>
-			<button class="mp-btn-big" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contatti' ) ) ?>'"><h4>Contattaci</h4></button>
+			<button class="mp-btn-big" type="button" onclick="location.href='<?php echo get_permalink( get_page_by_path( 'contatti' ) ) ?>'"><h4 class="bold">Contattaci</h4></button>
 		</div>
 </section>
 

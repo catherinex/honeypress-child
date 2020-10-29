@@ -7,7 +7,7 @@
  get_header();  ?>
  <section class="section-module blog insight-post">
    <div class="row insight-post-breadcrumb">
-     <div class="col-lg-3 col-md-4 col-sm-4 col-5">
+     <div class="col-lg-3 col-md-4 col-sm-4 col-6">
        <img src="http://localhost/wordpress/wp-content/uploads/2020/09/Sottrazione-35.png" />
        <a href="<?php echo get_permalink( get_page_by_path( 'intuizioni' ) ) ?>"><h6>Torna a Insights</h6></a>
      </div>

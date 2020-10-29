@@ -27,12 +27,13 @@ input[type="button"] {
 }
 
 .mp-btn-big {
-  width: 260px;
-  height: 82px;
+  width: 195px;
+  height: 62px;
 }
 
 button:hover, button:focus {
   background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
+  outline:none !important;
 }
 
 button {

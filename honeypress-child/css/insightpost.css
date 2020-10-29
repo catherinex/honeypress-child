@@ -29,8 +29,11 @@
   padding-right: 8%;
 }
 
-.insight-post-content {
+.insight-post .insight-post-content {
   padding-top: 43px;
+  padding-left: 14%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .insight-post-content figure {
@@ -38,8 +41,8 @@
 }
 
 .blog .standard-view .post .entry-title a {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 53px;
+  font-family: Montserrat-Bold;
   line-height: 1.29em;
   color: #011a27;
 }
@@ -53,16 +56,22 @@
 }
 
 .blog .standard-view.blog-single .entry-content p {
-  font-size: 45px;
+  font-size: 34px;
 }
 
 @media (max-width:991px) {
+  .insight-post .insight-post-content {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .quotation-mark-right, .insight-post .bottom {
     display: none;
   }
 
   .blog .standard-view .post .entry-title a {
-    font-size: 59px;
+    font-size: 53px;
   }
 
   .blog .standard-view.blog-single .entry-content p {

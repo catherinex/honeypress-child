@@ -7,7 +7,7 @@
 ?>
 <div class="row footer-sidebar">
 	<?php
-	  if ((is_front_page() && 'page' == get_option( 'show_on_front' )) || (is_page('servizi'))) {
+	  if ((is_front_page() && 'page' == get_option( 'show_on_front' )) || (is_page('servizi')) || (is_page('services')) || (is_page('contatti')) || (is_page('contacts'))) {
 			// widget 1
 		for($i=1; $i<=1; $i++)
 		{

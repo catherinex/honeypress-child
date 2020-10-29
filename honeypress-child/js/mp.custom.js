@@ -2,6 +2,24 @@
 
     $( document ).ready(function() {
 
+      // home page - navigation
+      //$( ".lang-item-en .nav-link img").attr('src', 'http://localhost/wordpress/wp-content/themes/honeypress-child/images/flag-eng.png');
+      //$( ".lang-item-it .nav-link img").attr('src', 'http://localhost/wordpress/wp-content/themes/honeypress-child/images/flag-ita.png');
+      //$( ".lang-item .nav-link img").attr('style', 'width: 38px; height: 24px;');
+
+      // home page - services
+      $( ".image-grid .col-lg-4" ).hover(
+          function() {
+            var imgUrl = $( this ).find('img').attr('src');
+            var newUrl = imgUrl.substr(0, imgUrl.length-4)+"A.png";
+            $( this ).find('img').attr('src', newUrl);
+            $( this ).find('img').data('oUrl', imgUrl);
+          }, function() {
+            var imgUrl = $( this ).find('img').attr('src');
+            var newUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
+            $( this ).find('img').attr('src', newUrl);
+      });
+
 
 
       $( ".insights-post-list .post" ).hover(
@@ -15,19 +33,35 @@
           $( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/arrow2.png');
       });
 
-      if ($( window ).width() > 991) {
+      // START services page - logo carousel
+      if ($( window ).width() >= 1545) {
         $('.single-item').slick({
           speed: 500,
           slidesToShow: 4,
           slidesToScroll: 1
         });
-      } else {
+      } else if ($( window ).width() >= 1100) {
+        $('.single-item').slick({
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 1
+        });
+      }
+      else if ($( window ).width() >= 992) {
+        $('.single-item').slick({
+          speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 1
+        });
+      }
+      else {
         $('.single-item').slick({
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1
         });
       }
+      // END services page - logo carousel
 
       $('.service-tabs .builder-tabs-wrap').tabs();
 
@@ -50,25 +84,17 @@
         $('.accordion-content').append('<a href="mailto:demonxuxiang@gmail.com" class="mp-btn mp-btn-small" type="button"><h6 class="bold">Invia il tuo CV</h6></a>');
       }
 
-
+      // START work with us - accordion
       $('.workwithus-jobs .module-accordion').accordion({
+        active: false,
+        collapsible: true,
           beforeActivate: function( event, ui ) {
             ui.newHeader.find('img').attr('src', 'http://localhost/wordpress/wp-content/themes/honeypress-child/images/arrow_top.png');
             ui.oldHeader.find('img').attr('src', 'http://localhost/wordpress/wp-content/themes/honeypress-child/images/sottrazione-15.png');
           }
       });
+      // END work with us - accordion
 
-      $( ".image-grid .col-lg-4" ).hover(
-          function() {
-            var imgUrl = $( this ).find('img').attr('src');
-            var newUrl = imgUrl.substr(0, imgUrl.length-4)+"A.png";
-            $( this ).find('img').attr('src', newUrl);
-            $( this ).find('img').data('oUrl', imgUrl);
-          }, function() {
-            var imgUrl = $( this ).find('img').attr('src');
-            var newUrl = imgUrl.substr(0, imgUrl.length-5)+".png";
-            $( this ).find('img').attr('src', newUrl);
-      });
 
       $( ".image-grid .col-lg-4" ).click(
         function() {
@@ -86,20 +112,41 @@
         }
       )
 
-      $( ".section-service .col-xl-4" ).hover(
+      // START service box
+      if ($( window ).width() >= 1200) {
+        $( ".section-service .col-xl-4" ).find('img').attr('width', '352px');
+      }
+
+
+      $( ".section-service .col-lg-4" ).hover(
           function() {
-            var imgUrl = $( this ).find('img').attr('src');
-            var newUrl = imgUrl.substr(0, imgUrl.length-5)+"2.png";
-            $( this ).find('img').attr('src', newUrl);
-            $( this ).attr('style', 'z-index:1000;top:-172px;left:-64px;');
-            //$( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/Gruppo-di-maschere-91.png');
+            if ($( window ).width() >= 1200) {
+              var imgUrl = $( this ).find('img').attr('src');
+              var newUrl = imgUrl.substr(0, imgUrl.length-5)+"2.png";
+              $( this ).find('img').attr('src', newUrl);
+              $( this ).find('img').attr('width', '469px');
+              $( this ).attr('style', 'z-index:10;top:-129px;left:-48px;');
+            }
+
           }, function() {
-            var imgUrl = $( this ).find('img').attr('src');
-            var newUrl = imgUrl.substr(0, imgUrl.length-5)+"1.png";
-            $( this ).find('img').attr('src', newUrl);
-            $( this ).removeAttr('style');
-            //$( this ).find('img').attr('srcset', 'http://localhost/wordpress/wp-content/uploads/2020/09/Gruppo-di-maschere-86.png');
+            if ($( window ).width() >= 1200) {
+              var imgUrl = $( this ).find('img').attr('src');
+              var newUrl = imgUrl.substr(0, imgUrl.length-5)+"1.png";
+              $( this ).find('img').attr('src', newUrl);
+              $( this ).find('img').attr('width', '352px');
+              $( this ).removeAttr('style');
+            }
+
       });
+
+      $('.home .section-service .col-xl-4 img').on('click', function() {
+        if ( document.documentElement.lang.toLowerCase() === "en-gb" ) {
+          window.open('wordpress/en/services', '_self');
+        } else {
+          window.open('wordpress/servizi', '_self');
+        }
+      });
+      // END service box
     });
 
 

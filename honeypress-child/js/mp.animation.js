@@ -1,12 +1,14 @@
 ( function ($) {
 
+
+
     $( document ).ready(function() {
 
       if ($( window ).width() <= 576) {
         $('#home-arrow').attr('src', '/wordpress/wp-content/themes/honeypress-child/images/sottrazione-165-mobile.png')
       }
 
-      if (document.getElementById("bigArrow-row") !== null && $( window ).width() >= 991) {
+      if (document.getElementById("bigArrow-row") !== null && $( window ).width() >= 992) {
         var elem = document.getElementById("bigArrow");
           var pos = -1920;
           var id = setInterval(frame, 1);
@@ -21,78 +23,101 @@
                 })
               } );
             } else {
-              pos++;
+              pos = pos + 3;
               elem.style.left = pos + "px";
             }
           }
       }
 
-      if (document.getElementById("home-arrow") !== null) {
-        $('.text1').fadeIn( 3000, function() {
-          var elem = document.getElementById("home-arrow");
 
+
+      if (document.getElementById("home-arrow") !== null) {
+
+        var windowWidth = $( window ).width();
+
+        $('.text1').fadeIn( 1000, function() {
+          var elem = document.getElementById("home-arrow");
           if ($( window ).width() >= 1200) {
-            var pos = -371;
-            var id = setInterval(frame, 1);
+            // pc
+            var pos = -745;
+            var init = -745;
+            var gap = Math.floor((windowWidth + 745) / 3);
+            console.log(gap);
+            var id = setInterval(frame, 8);
+
             function frame() {
-            if (pos == 269) {
-              $('.text1').fadeOut( function() {
-                $('.text2').fadeIn( 3000 );
-              })
-            }
-            if (pos == 909) {
-              $('.text2').fadeOut( function() {
-                $('.text3').fadeIn( 3000 );
-              });
-            }
-            if (pos == 1549) {
-                clearInterval(id);
-              } else {
-                pos++;
-                elem.style.left = pos + "px";
-              }
-            }
-          } else if ($( window ).width() > 576) {
-            var pos = -605;
-            var id = setInterval(frame, 1);
-            function frame() {
-              if (pos == -275) {
+              if (pos == init + gap) {
                 $('.text1').fadeOut( function() {
-                  $('.text2').fadeIn( 3000 );
+                  $('.text2').fadeIn( 1000 );
                 })
               }
-              if (pos == 54) {
+              if (pos == init + gap*2) {
                 $('.text2').fadeOut( function() {
-                  $('.text3').fadeIn( 3000 );
+                  $('.text3').fadeIn( 1000 );
                 });
               }
-              if (pos == 384) {
-                clearInterval(id);
-              } else {
-                pos++;
-                elem.style.left = pos + "px";
+              if (pos == windowWidth) {
+                  pos = -746;
+                  $('.text3').fadeOut( function() {
+                    $('.text1').fadeIn( 1000 );
+                  });
               }
+              pos++;
+              elem.style.left = pos + "px";
+            }
+
+          } else if ($( window ).width() >= 576) {
+            // tablet
+            var pos = -745;
+            var init = -745;
+            var gap = Math.floor((windowWidth + 745) / 3);
+            var id = setInterval(frame, 12);
+            function frame() {
+              if (pos == init + gap) {
+                $('.text1').fadeOut( function() {
+                  $('.text2').fadeIn( 1000 );
+                })
+              }
+              if (pos == init + gap*2) {
+                $('.text2').fadeOut( function() {
+                  $('.text3').fadeIn( 1000 );
+                });
+              }
+              if (pos == windowWidth) {
+                pos = -746;
+                $('.text3').fadeOut( function() {
+                  $('.text1').fadeIn( 1000 );
+                });
+              }
+              pos++;
+              elem.style.left = pos + "px";
+
             }
           } else {
-            var pos = -204;
-            var id = setInterval(frame, 1);
+            // mobile
+            var pos = -331;
+            var init = -331;
+            var gap = Math.floor((windowWidth + 331) / 3);
+            var id = setInterval(frame, 14);
             function frame() {
-              if (pos == -41) {
+              if (pos == init + gap) {
                 $('.text1').fadeOut( function() {
-                  $('.text2').fadeIn( 3000 );
+                  $('.text2').fadeIn(1000);
                 })
               }
-              if (pos == 121) {
+              if (pos == init + gap*2) {
                 $('.text2').fadeOut( function() {
-                  $('.text3').fadeIn( 3000 );
+                  $('.text3').fadeIn(1000);
                 });
               }
-              if (pos == 283) {
-                clearInterval(id);
-              } else {
-                pos++;
-                elem.style.left = pos + "px";
+              if (pos == windowWidth) {
+                pos = -332;
+                $('.text3').fadeOut( function() {
+                  $('.text1').fadeIn(1000);
+                });
               }
+              pos++;
+              elem.style.left = pos + "px";
             }
           }
         })

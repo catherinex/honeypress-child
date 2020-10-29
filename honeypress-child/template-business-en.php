@@ -30,9 +30,9 @@
 
 <section class="section-service container">
 	<div class="row">
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_SPAIN_1.png" /></a></div>
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_ITALY_1.png" /></a></div>
-		<div class="col-xl-4 col-lg-6 col-md-12"><a href="/wordpress/en/services/"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_GB_1.png" /></a></div>
+		<div class="col-xl-4 col-lg-6 col-md-12"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_SPAIN_1.png" /></div>
+		<div class="col-xl-4 col-lg-6 col-md-12"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_ITALY_1.png" /></div>
+		<div class="col-xl-4 col-lg-6 col-md-12"><img src="/wordpress/wp-content/themes/honeypress-child/images/solutions/BOX_GB_1.png" /></div>
 	</div>
 </section>
 

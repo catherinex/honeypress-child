@@ -5,13 +5,16 @@
 
 .insights-post-list .post {
   border-bottom: solid 3px #011a27;
-  padding-right: 14%;
 }
 
 .insights-post-list .post .post-content .post-title a {
-  font-size: 45px;
+  font-size: 34px;
   font-weight:bold;
   line-height: 1.33em;
+}
+
+.insights-post-list .post .post-content {
+  padding-right: 7%;
 }
 
 @media (max-width:991px) {
@@ -20,9 +23,13 @@
   }
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .builder-posts-wrap.list-thumb-image .post-image {
     display: none;
+  }
+
+  .insights-post-list .post .post-content {
+    padding-left: 7%;
   }
 
   .insights-post-list .post .post-content .post-title a {

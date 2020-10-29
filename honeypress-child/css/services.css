@@ -24,7 +24,7 @@
     background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   .service-content-left {
     width: 116px !important;
   }
@@ -115,7 +115,7 @@
 }
 
 .text p.title {
-  font-size: 238px;
+  font-size: 179px;
   color: #d9dddf;
   margin-top: 145px;
   margin-bottom: 60px !important;
@@ -128,7 +128,7 @@
   line-height: 1.33;
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   .text p.title {
     font-size: 110px;
     margin-top: 44px;
@@ -146,7 +146,7 @@
   }
 
   .text p.title {
-    font-size: 69px;
+    font-size: 55px;
     line-height: 0.94em;
     margin-bottom: 24px !important;
     color: #d9dddf !important;
@@ -221,7 +221,7 @@
   }
 
   .slick-slide img {
-    width: 182px;
+    width: 158px;
   }
 }
 
@@ -235,6 +235,14 @@
   padding-right: 7%;
 }
 
+.image-grid img {
+  width: 400px;
+}
+
+.image-grid .col-sm-4 {
+  text-align: center;
+}
+
 .grid-row {
   margin-top: 24.5px;
 }
@@ -245,7 +253,7 @@
   margin-bottom: 92px;
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   .image-grid img {
     width: 233px;
     height: 233px;
@@ -267,18 +275,24 @@
   }
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .tab2-text {
     padding-bottom: 6px;
   }
 
   .image-grid .row {
     margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .image-grid .col-md-4 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .image-grid img {
-    width: 128px;
-    height: 128px;
+    width: 102px;
+    height: 102px;
   }
 
   .grid-row {
@@ -300,12 +314,15 @@
 
 /* START tab 3 - solutions */
 .tab-solutions .section-service {
-  margin-top: 280px;
-  margin-bottom: 307px;
+  margin-top: 210px;
   height: 947px;
 }
 
-@media (max-width:991px) {
+.tab-solutions .section-service img {
+  cursor: default;
+}
+
+@media (max-width:1199px) {
   .tab-solutions .section-service {
     margin-top: 169px;
     height: auto;
@@ -332,8 +349,8 @@
 /* START know more */
 
 .module_column .module-buttons.rounded a {
-  width: 260px;
-  height: 82.8px;
+  width: 198px;
+  height: 62px;
   border-radius: 16px;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.2);
   background-image: linear-gradient(to top, #90adc6, #e5e7ea 62%, #f6f7f8, #f8f8f8);
@@ -343,7 +360,7 @@
   border: 0px;
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   .module_column .module-buttons.rounded a {
     width: 219px;
     height: 69.7px;
@@ -364,7 +381,7 @@
 
 /* END know more */
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   #bigArrow-row, .arrow-row {
     display: none;
   }
@@ -470,7 +487,7 @@
   transition: 0.3s;
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
   .closeimg {
     right: 4%;
   }

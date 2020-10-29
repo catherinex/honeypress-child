@@ -10,14 +10,18 @@
 }
 
 .accordion-title img {
-  width: 49px !important;
-  height: 31px !important;
+  width: 37px !important;
+  height: 23px !important;
 }
 
 .accordion-title {
   display: flex !important;
   padding-top: 40px !important;
   padding-bottom: 40px !important;
+}
+
+.accordion-title:focus {
+  outline:none;
 }
 
 .ui.module-accordion .accordion-title a {
